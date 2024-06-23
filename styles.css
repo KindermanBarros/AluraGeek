@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #4a00e0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.product-form,
+.product-list {
+  width: 45%;
+}
+
+.product-form h2,
+.product-list h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.product-form button {
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.product-list #productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #4a00e0;
+  color: white;
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card .delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #4a00e0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
